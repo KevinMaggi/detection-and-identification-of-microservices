@@ -66,9 +66,9 @@ def analyze_repo(url: str) -> list[dict[str, int | list[str] | str]]:
             if count == 1:
                 first_chunk_commit_hash = commit.hash
 
-            current_docker_composes = []
+            current_docker_composes = set()
             for dc_name in DOCKER_COMPOSE_NAMES:
-                current_docker_composes.extend(locate_files(workdir, dc_name))
+                current_docker_composes.update(locate_files(workdir, dc_name))
 
             if current_docker_composes != chunk_docker_composes:
                 result = dict.fromkeys(KEYS)
