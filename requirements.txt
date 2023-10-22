@@ -1,0 +1,6 @@
+python-dotenv==1.0.0
+dockerfile==3.3.1
+parameter-expansion-patched==0.3.1
+pyyaml==5.4.1
+gitpython==3.1.30
+PyDriller==2.5
