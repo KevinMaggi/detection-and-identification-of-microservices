@@ -53,7 +53,7 @@ def analyze_repo(url: str) -> list[dict[str, int | list[str] | str]]:
         num_of_commits = len(list(repository.traverse_commits()))
 
         count = 0
-        chunk_docker_composes = []
+        chunk_docker_composes = set()
         first_chunk_commit_num, first_chunk_commit_hash = 1, None
         last_chunk_commit_hash = None
         last_docker_compose = None
