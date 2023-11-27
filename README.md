@@ -1,5 +1,5 @@
 # Lightweight static detection and identification of microservices
-Lightweight static black-box method for the detection and identification of microservices
+This repository contains a lightweight static black-box method for the detection and identification of microservices, as part of the master thesis work entitled: "Analysis of the Evolution of Code Techinical Debt in Microservices Architectures" in Computer Engineering at University of Florence, whose replication package is available [here](https://github.com/KevinMaggi/evolution-of-code-td-in-msa_rep-pkg).
 
 ## Execution of experiments
 
