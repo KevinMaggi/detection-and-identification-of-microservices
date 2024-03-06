@@ -371,7 +371,8 @@ def dc_collect_services(dc_path: Path, proj_dir: Path = None, env_files: list[Pa
                     )
 
             # Step 2: substitute the env variables
-            dc = _interpolate_with_env(dc, env)
+            if env:
+                dc = _interpolate_with_env(dc, env)
 
             # Step 3: recurse on inclusions (recursion step)
             # [https://docs.docker.com/compose/compose-file/14-include/]
